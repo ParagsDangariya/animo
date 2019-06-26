@@ -42,7 +42,8 @@ ImageView img;
 
                ActivityOptions options;
 
-               options =ActivityOptions.makeCustomAnimation(MainActivity.this,R.anim.slidein,R.anim.slideout);
+              // options =ActivityOptions.makeCustomAnimation(MainActivity.this,R.anim.slidein,R.anim.slideout);
+                options = ActivityOptions.makeScaleUpAnimation(v,0,0,v.getWidth(),v.getHeight());
 
                startActivity(i,options.toBundle());
            }
